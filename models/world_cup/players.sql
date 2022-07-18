@@ -1,6 +1,6 @@
 
 
-with Players as (
+with players as (
 
   SELECT  
     Player,
@@ -13,4 +13,4 @@ with Players as (
   ORDER BY Cup_Year DESC
 )
 
-select * from Players
+select * from players

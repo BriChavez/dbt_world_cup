@@ -1,0 +1,7 @@
+-- with Player_Caps as (
+--   select Player,
+--         Position,
+--         Caps,
+--   from {{ ref('players') }}
+--   order by Caps desc
+-- )
