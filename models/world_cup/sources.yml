@@ -1,0 +1,34 @@
+version 2
+
+
+models:
+  - name: players
+    description: "List of players and general information"
+    columns:
+      - name: Player
+        description: "Player name"
+        tests:
+            - unique
+            - not_null
+        - name: Jersey_num
+        description: "Jersey number assosciated with that player, many null values"
+        - name: Position
+        description: "what posistion the player is"
+        - name: DOB_Age
+        description: "Player birthday and age when they competed"
+        - name: Caps
+        description: "how many internation games the player has played for their team. higher the number, better the player"
+        - name: Club
+        description: "Team the player played for in the world cup"
+        - name: Cup_year
+        description: "what year the player competed"
+
+
+    # - name: my_second_dbt_model
+    #   description: "A starter dbt model"
+    #   columns:
+    #       - name: id
+    #         description: "The primary key for this table"
+    #         tests:
+    #             - unique
+    #             - not_null
