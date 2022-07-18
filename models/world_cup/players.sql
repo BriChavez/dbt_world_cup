@@ -1,16 +1,16 @@
 
-
 with players as (
 
-  SELECT  
+  select
     Player,
     Jersey_num,
     Position,
     DOB_Age,
+    Caps,
     Club,
     Cup_year
-  FROM `dbtweek.world_cup.world_cup`
-  ORDER BY Cup_Year DESC
+  from `dbtweek.world_cup.world_cup`
+  order by Cup_Year desc
 )
 
 select * from players
