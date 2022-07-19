@@ -5,7 +5,7 @@ with players as (
     Player,
     Jersey_num,
     Position,
-    DOB_Age,
+    Age,
     Caps,
     Club,
     Cup_year
