@@ -1,0 +1,23 @@
+# version 2
+
+# sources:
+#   - name: world_cup
+#     database: dbtweek.dbt_brichavez
+    # description: Players info from all the world cups
+    # tables:
+    #   - name: players
+    #     description: Player name and general info
+    #     columns:
+    #       - name: Player
+    #         tests:
+    #         - unique
+    #         - not_null
+
+    # - name: my_second_dbt_model
+    #   description: "A starter dbt model"
+    #   columns:
+    #       - name: id
+    #         description: "The primary key for this table"
+    #         tests:
+    #             - unique
+    #             - not_null
