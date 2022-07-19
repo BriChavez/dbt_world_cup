@@ -3,11 +3,12 @@ with player_caps as (
         Player,
         Position,
         Caps,
+        Age,
         Club
     from 
         {{ ref('players') }}
     where 
-        Caps not like '%0%' and Caps not like 'n/a'
+        Caps > 0
     order by 
         Caps desc
 )
