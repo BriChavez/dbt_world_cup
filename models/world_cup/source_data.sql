@@ -3,7 +3,7 @@
 
 with source_data as (
     select *
-    from `dbtweek.world_cup.world_cup`
+    from {{ source('world_cup','world_cup') }}
 )
 
 
