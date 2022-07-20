@@ -9,7 +9,7 @@ with players as (
     Caps,
     Club,
     Cup_year
-  from `dbtweek.world_cup.world_cup`
+  from {{ ref('source_data') }}
   order by Cup_Year desc
 )
 
