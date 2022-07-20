@@ -2,11 +2,11 @@ version: 2
 
 sources:
   - name: world_cup
-    description: pLAYER AND CLUB INFORMATION FOR THE WORLD CUP
+    description: Player and Club informationd for the world cups
     database: dbtweek
     tables:
       - name: world_cup
-        description: Source data for our project
+        description: Source world cup data for our project
         columns:
           - name: Player
             description: Player names as index
