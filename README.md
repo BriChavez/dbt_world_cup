@@ -7,8 +7,17 @@ Try running the following commands:
 - dbt test
 
 
-https://datastudio.google.com/embed/reporting/18ca8542-1971-4fc6-aa67-38fb2161f4a6/page/pfCyC
-<!-- <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/18ca8542-1971-4fc6-aa67-38fb2161f4a6/page/pfCyC" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+<iframe 
+  width="660"
+  height="450"
+  src="https://datastudio.google.com/embed/reporting/18ca8542-1971-4fc6-aa67-38fb2161f4a6/page/pfCyC"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+<!-- https://datastudio.google.com/embed/reporting/18ca8542-1971-4fc6-aa67-38fb2161f4a6/page/pfCyC -->
+<!-- <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/18ca8542-1971-4fc6-aa67-38fb2161f4a6/page/pfCyC"  style="border:0" allowfullscreen></iframe> -->
 
 
 ### Resources:
