@@ -13,5 +13,4 @@ with player_caps as (
         Caps desc
 )
 
-
 select * from player_caps
