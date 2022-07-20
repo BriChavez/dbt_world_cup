@@ -7,6 +7,10 @@ Try running the following commands:
 - dbt test
 
 
+
+<iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/18ca8542-1971-4fc6-aa67-38fb2161f4a6/page/pfCyC" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
