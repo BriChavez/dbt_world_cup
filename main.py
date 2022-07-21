@@ -1,10 +1,16 @@
+from google.cloud import storage
+import os
 import pandas as pd
 
+
+"""Pull in a CSV from a URL"""
 # import a csv from the world wide web
 soccer_url = "https://raw.githubusercontent.com/BriChavez/FIFAWorldCup/master/squads.csv"
 # read it into our trusty pandas df so we can clean it
 df = pd.read_csv(soccer_url)
 
+
+"""Data scrub down"""
 # set index as player name
 df = df.set_index('Player')
 # set column names
@@ -16,7 +22,6 @@ df.columns = ['Jersey_Num',
               'Country',
               'ClubCountry',
               'Cup_Year']
-
 # replace non integer values, in the column Caps, with 0
 df['Caps'] = df['Caps'].str.replace('[^\w\s]', '0')
 # extract words and numbers surrounded by parens. aka 'aged' and age value, in this instance
@@ -43,9 +48,31 @@ df.Caps = df.Caps.astype(int, errors='ignore')
 df.Birthday = pd.to_datetime(df.Birthday)
 # change cup year to a datetime
 df.Cup_Year = pd.to_datetime(df.Cup_Year, format='%Y')
+# change the position id to be something a little more readable.
+df.Position = df.Position.replace(['1GK', '2DF', '3MF', '4FW'], [
+                                  'Goal Keeper', 'Defense', 'Midfield', 'Forward'])
 # dropping the wordy column as we got what we wanted from it.
-df = df.drop(['DOB_Age'], axis = 1)
+df = df.drop(['DOB_Age'], axis=1)
 # check to see we did it right
 df.info()
 # write our df to a csv
 df.to_csv('data/world_cup.csv')
+
+
+
+"""Send CSV to google cloud storage"""
+# set google creds file to the one for this project
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/fossa/data/dont_worry_about_it/dbt-user-creds.json"
+# set project and bucket name
+PROJECT = 'dbtweek'
+BUCKET = 'world_cup'
+
+# Instantiates a client
+client = storage.Client(PROJECT)
+# Retrieve aforementioned bucket
+bucket = client.get_bucket(BUCKET)
+
+
+# upload the csv to the bucket
+blob = bucket.blob('world_cup.csv')
+blob.upload_from_filename('data/world_cup.csv')
