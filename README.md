@@ -13,7 +13,7 @@ _This data was scraped from the world cup wiki page by one Pratap Vardhan; git h
 
 <!-- [<img alt="alt_text" width="40px" src="images/image.PNG" />](https://www.google.com/) -->
 
-[<img alt="alt_text" width="40px" src="data/map.jpg" />](https://brichavez.github.io/dbt_world_cup/)
+[<img alt="alt_text" width="auto" src="data/map.jpg" />](https://brichavez.github.io/dbt_world_cup/)
 
 
 ## Technologies Used
