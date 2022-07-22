@@ -9,7 +9,7 @@
 
 ## Description
 
-_This data was scraped from the world cup wiki page by one Pratap Vardhan; git hub link to the csv https://github.com/pratapvardhan/FIFAWorldCup/blob/master/squads.csv. I took the repo file csv as raw github user data, uploaded it into a pandas dataframe to do some transformations and renaming. Then I sent it off to BigQuery to be Uploaded to DBT. Inside DBT, the data was transformed further to follow a snowflake style modeling system. Afterwards, it was brought into Google Data Studio to make crazy cool interactive maps following our dbt model. Feel free to explore the graph below to find out more in depth information on world cup teams and players._
+_This data was scraped from the world cup wiki page by one Pratap Vardhan; git hub link to the csv https://github.com/pratapvardhan/FIFAWorldCup/blob/master/squads.csv. /n I took the repo file csv as raw github user data, uploaded it into a pandas dataframe to do some transformations and renaming. Then I sent it off to BigQuery to be Uploaded to DBT. Inside DBT, the data was transformed further to follow a snowflake style modeling system. Afterwards, it was brought into Google Data Studio to make crazy cool interactive maps following our dbt model. Feel free to explore the graph below to find out more in depth information on world cup teams and players._
 
 
 
@@ -28,7 +28,7 @@ _This data was scraped from the world cup wiki page by one Pratap Vardhan; git h
 * _SQL_
 
 [Click here for my Google Data Studios interactive map](https://brichavez.github.io/dbt_world_cup/)
-[![Interactive Map](data/map.png)]
+[![Interactive Map](data/map.pdf)]
 
 ## Navigating the map
 
