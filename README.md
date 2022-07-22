@@ -26,6 +26,8 @@ _This data was scraped from the world cup wiki page by one Pratap Vardhan; git h
 * _YAML_
 * _DBT_
 * _SQL_
+* _HTML_
+* _Markdown_
 
 [Click here for my Google Data Studios interactive map](https://brichavez.github.io/dbt_world_cup/)
 [![Interactive Map](data/map.pdf)]
