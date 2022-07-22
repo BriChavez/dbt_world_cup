@@ -11,9 +11,16 @@
 
 _This data was scraped from the world cup wiki page by one Pratap Vardhan; git hub link to the csv https://github.com/pratapvardhan/FIFAWorldCup/blob/master/squads.csv. /n I took the repo file csv as raw github user data, uploaded it into a pandas dataframe to do some transformations and renaming. Then I sent it off to BigQuery to be Uploaded to DBT. Inside DBT, the data was transformed further to follow a snowflake style modeling system. Afterwards, it was brought into Google Data Studio to make crazy cool interactive maps following our dbt model. Feel free to explore the graph below to find out more in depth information on world cup teams and players._
 
+
+## Navigating the map
+
+* _You can click on countries on the map to see some of their team information in the table to the left. You will also notice the Player bar graph on the bottom of the page update its information, limiting the players to only be in the country you clicked on. Also updating will be the Clicker counters to the right of the map. You may dive deeper, clicking on any field you find interesting. Keep in mind, if you find the map to be stuck or unresponsive, you are trying to query larger than the parameters. Look around for any text in bold, unselect it by clicking on it again, and you will be good to go to keep exploring as your heart desires._
+
+
 <!-- [<img alt="alt_text" width="40px" src="images/image.PNG" />](https://www.google.com/) -->
 
 [<img alt="alt_text" width="auto" src="data/map.jpg" />](https://brichavez.github.io/dbt_world_cup/)
+
 
 
 ## Technologies Used
@@ -33,10 +40,6 @@ _This data was scraped from the world cup wiki page by one Pratap Vardhan; git h
 * _Markdown_
 
 
-
-## Navigating the map
-
-* _You can click on countries on the map to see some of their team information in the table to the left. You will also notice the Player bar graph on the bottom of the page update its information, limiting the players to only be in the country you clicked on. Also updating will be the Clicker counters to the right of the map. You may dive deeper, clicking on any field you find interesting. Keep in mind, if you find the map to be stuck or unresponsive, you are trying to query larger than the parameters. Look around for any text in bold, unselect it by clicking on it again, and you will be good to go to keep exploring as your heart desires._
 
 
 ### Resources:
