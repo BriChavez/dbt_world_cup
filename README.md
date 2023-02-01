@@ -16,7 +16,7 @@ _This data was scraped from the world cup wiki page by one Pratap Vardhan; git h
 
 _You can click on countries on the map to see some of their team information in the table to the left. You will also notice the Player bar graph on the bottom of the page update its information, limiting the players to only be in the country you clicked on. Also updating will be the Clicker counters to the right of the map. You may dive deeper, clicking on any field you find interesting. Keep in mind, if you find the map to be stuck or unresponsive, you are trying to query larger than the parameters. Look around for any text in bold, unselect it by clicking on it again, and you will be good to keep exploring as your heart desires._
 
-# Click the map to begin.
+#### Click the map to begin.
 
 
 <!-- [<img alt="alt_text" width="40px" src="images/image.PNG" />](https://www.google.com/) -->
